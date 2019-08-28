@@ -5,7 +5,7 @@ Pseudocode for temperature conversion
 
 
 def main():
-    menu = """C - Convert Celsius to Fahrenheit
+    menu = """    C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
     Q - Quit"""
     print(menu)
