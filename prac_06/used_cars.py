@@ -21,6 +21,10 @@ def main():
     limo.drive(115)
     print(limo.odometer)
 
+    ute = Car("Ute", 50)
+    ute.drive(30)
+    print("{} has {}L of fuel and an odometer of {}km".format(ute.name, ute.fuel, ute.odometer))
+
 
 
 main()
