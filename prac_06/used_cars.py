@@ -26,5 +26,4 @@ def main():
     print("{} has {}L of fuel and an odometer of {}km".format(ute.name, ute.fuel, ute.odometer))
 
 
-
 main()
