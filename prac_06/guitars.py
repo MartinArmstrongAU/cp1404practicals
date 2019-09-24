@@ -21,12 +21,13 @@ def main():
     if guitars:
         guitars.sort()
         print("These are my guitars:")
-        for i, guitar in enumerate(guitars):
+        for i, guitar in enumerate(guitars, 1):
             vintage_string = ""
             if guitar.is_vintage():
                 vintage_string = "(vintage)"
-            print("Guitar {}: {:>20} ({}), worth ${:10,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
-                                                                      vintage_string))
+            print(
+                "Guitar {}: {guitar.name:>20} ({guitar.year}), worth ${guitar.cost:10,.2f} {}".format(i, vintage_string,
+                                                                                                      guitar=guitar))
     else:
         print("No guitars :( Quick, go and buy one!")
 
