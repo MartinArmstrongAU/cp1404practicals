@@ -20,6 +20,7 @@ def main():
     print(limo.fuel)
     limo.drive(115)
     print(limo.odometer)
+    print(limo)
 
     ute = Car("Ute", 50)
     ute.drive(30)
